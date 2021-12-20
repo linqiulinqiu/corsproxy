@@ -12,7 +12,7 @@ var corsOptions = {
   origin: function (origin, callback) {
       if(origin.startsWith('http://localhost')){
           callback(null, true)
-	  }else if(origin.startsWith('https://wwwa.onrender.com')){
+	  }else if(origin.startsWith('https://xwallet.onrender.com')){
           callback(null, true)
       } else {
           callback(new Error('Not allowed by CORS'))
