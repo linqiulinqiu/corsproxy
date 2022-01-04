@@ -12,6 +12,8 @@ var corsOptions = {
   origin: function (origin, callback) {
       if(origin.startsWith('http://localhost')){
           callback(null, true)
+	  }else if(origin.startsWith('https://xwallet.plotbridge.io')){
+          callback(null, true)
 	  }else if(origin.startsWith('https://xwallet.onrender.com')){
           callback(null, true)
       } else {
